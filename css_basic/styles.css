@@ -5,7 +5,16 @@ body {
   height: 100vh; /* Ensures full viewport height */
   margin: 0;     /* Remove default margin */
 }
-
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+}
 /* Set up the main area as a row flex container */
 main {
   display: flex;
@@ -13,6 +22,10 @@ main {
   flex: auto; /* Allows it to grow and shrink */
 }
 
+.logo {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
 /* Article takes 2/3 of the horizontal space */
 article {
   flex: 2;
@@ -32,6 +45,12 @@ aside {
 header,
 footer {
   background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+}
+footer {
+  background-color: #333;
+  color: white;
   padding: 1rem;
   text-align: center;
 }
