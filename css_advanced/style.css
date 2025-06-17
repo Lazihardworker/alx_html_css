@@ -126,4 +126,167 @@ main > section:first-of-type div:nth-child(2) p {
   margin: 0;
 }
 
+/* === Global Shared Styles === */
+section {
+  padding: 64px 32px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* === Quote Section === */
+.quote {
+  background-color: #f9f9f9; /* Match Figma background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.quote-container img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.quote-text blockquote {
+  font-size: 24px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.quote-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.quote-text p {
+  font-size: 14px;
+  color: #666;
+}
+.text-center {
+  text-align: center;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+.round-image {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+}
+.quote {
+  background-color: #f9f9f9;
+}
+
+.quote-container {
+  @extend .section-container;
+  @extend .text-center;
+}
+
+.quote-container img {
+  @extend .round-image;
+  margin-bottom: 24px;
+}
+/* Videos Section */
+.videos {
+  padding: 64px 24px;
+  background-color: #ffffff;
+}
+
+.videos h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: #071629; /* Matching Figma font color */
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.videos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-card {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0px 2px 4px rgba(7, 22, 41, 0.1);
+}
+
+.video-thumbnail {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.video-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #071629;
+}
+
+.video-description {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin-bottom: 16px;
+}
+
+/* Author Section */
+.video-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.video-author .author-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Rating Section */
+.video-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.video-rating img {
+  width: 16px;
+  height: 16px;
+}
+
+.video-rating p {
+  font-size: 13px;
+  margin-left: 8px;
+  color: #4a4a4a;
+}
+
+
 
